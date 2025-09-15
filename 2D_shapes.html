@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Shapes</title>
+</head>
+<body>
+    <h1>Canvas</h1>
+    <canvas id="myCanvas" width="500" height="400" style="border:2px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Draw Triangle
+        ctx.beginPath();
+        ctx.moveTo(80, 50);
+        ctx.lineTo(30, 150);
+        ctx.lineTo(130, 150);
+        ctx.closePath();
+        ctx.fillStyle = "red";
+        ctx.fill();
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+
+        // Draw Rectangle
+        ctx.beginPath();
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(180, 80, 120, 80);
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(180, 80, 120, 80);
+
+        // Draw Circle
+        ctx.beginPath();
+        ctx.arc(100, 250, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+
+        // Draw Ellipse
+        ctx.beginPath();
+        ctx.ellipse(350, 250, 60, 30, 0, 0, 2 * Math.PI);
+        ctx.fillStyle = "purple";
+        ctx.fill();
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+    </script>
+</body>
+</html>

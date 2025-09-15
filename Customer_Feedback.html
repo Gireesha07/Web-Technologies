@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Customer Feedback - Product</title>
+</head>
+<body>
+  <h1>Customer Feedback Form (Product)</h1>
+
+    <fieldset>
+      <h3>Your Details<h3>
+    
+       <label for="Full name">Full name:</label><br />
+      <input type="text" id="name" name="name"><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" ><br /><br />
+
+      <label for="phone">Phone (optional):</label><br />
+      <input type="tel" id="phone" name="phone" ><br />
+    
+    <br />
+
+    
+      <h2>Product Information</h2>
+
+      <label for="product">Product Name/Model:</label><br />
+      <input type="text" id="product" name="product" ><br /><br />
+
+      <label for="orderId">Order ID (optional):</label><br />
+      <input type="text" id="orderId" name="orderId"><br />
+   
+    <br />
+
+    
+      <h2>Overall Rating</h2>
+      <p>How would you rate the product?</p>
+     <input type="radio" name="rating" value="1" > 1<br>
+     <input type="radio" name="rating" value="2" /> 2<br>
+     <input type="radio" name="rating" value="3" /> 3<br>
+      <input type="radio" name="rating" value="4" /> 4<br>
+     <input type="radio" name="rating" value="5" /> 5<br>
+    
+    <br />
+
+    
+      <h2>What stood out? (select all that apply)</h2>
+      <input type="checkbox" name="aspects" value="quality" /> Quality<br />
+     <input type="checkbox" name="aspects" value="value" /> Value for Money<br />
+      <input type="checkbox" name="aspects" value="usability" /> Ease of Use<br />
+     <input type="checkbox" name="aspects" value="design" /> Design<br />
+      <input type="checkbox" name="aspects" value="durability" /> Durability<br />
+      <input type="checkbox" name="aspects" value="support" /> Customer Support<br />
+     <input type="checkbox" name="aspects" value="delivery" /> Delivery/Packaging
+    
+    <br />
+
+      <h2>Your Feedback</h2>
+      <label >What did you like?</label><br />
+      <textarea id="pros" name="pros" rows="3"></textarea><br /><br />
+
+      <label >What could be improved?</label><br />
+      <textarea id="cons" name="cons" rows="3"></textarea><br /><br />
+
+      <label >Additional Comments :</label><br />
+      <textarea id="comments" name="comments" rows="5" ></textarea>
+   
+    <br />
+
+    <button type="submit">Submit Feedback</button>
+    <button type="reset">Clear Form</button>
+  </form>
+  </fieldset>
+</body>
+</html>
